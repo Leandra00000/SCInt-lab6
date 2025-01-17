@@ -17,7 +17,7 @@ setDrawView fplan
 placeInstance BATCHbg 710.0 110.0
 placeInstance BATCHpower 10.0 10.0
 placeInstance BATCHsaradc 630.0 180.0
-placeInstance BATCHctr 710.0 50.0
+placeInstance BATCHctr 760.0 10.0
 
 setDrawView place
 setDrawView fplan

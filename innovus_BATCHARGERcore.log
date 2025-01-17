@@ -4,7 +4,7 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
 Options:	
-Date:		Thu Jan 16 15:39:50 2025
+Date:		Fri Jan 17 11:00:13 2025
 Host:		fatima.novalocal (x86_64 w/Linux 3.10.0-1160.99.1.el7.x86_64) (1core*4cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 16384KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
@@ -38,23 +38,23 @@ Loading LEF file BATCHARGERpower.lef ...
 
 Loading LEF file BATCHARGERsaradc.lef ...
 
-viaInitial starts at Thu Jan 16 15:40:40 2025
-viaInitial ends at Thu Jan 16 15:40:40 2025
+viaInitial starts at Fri Jan 17 11:01:03 2025
+viaInitial ends at Fri Jan 17 11:01:03 2025
 
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
 
-*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.38min, fe_real=0.83min, fe_mem=729.3M) ***
-#% Begin Load netlist data ... (date=01/16 15:40:40, mem=558.2M)
-*** Begin netlist parsing (mem=729.3M) ***
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.36min, fe_real=0.83min, fe_mem=737.8M) ***
+#% Begin Load netlist data ... (date=01/17 11:01:03, mem=611.8M)
+*** Begin netlist parsing (mem=737.8M) ***
 Created 0 new cells from 0 timing libraries.
 Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilog netlist 'BATCHARGERcore.v'
 
-*** Memory Usage v#2 (Current mem = 731.266M, initial mem = 272.281M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=731.3M) ***
-#% End Load netlist data ... (date=01/16 15:40:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=561.5M, current mem=561.5M)
+*** Memory Usage v#2 (Current mem = 739.781M, initial mem = 280.281M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=739.8M) ***
+#% End Load netlist data ... (date=01/17 11:01:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=615.1M, current mem=615.1M)
 Set top cell to BATCHARGERcore.
 Hooked 0 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -66,7 +66,7 @@ Building hierarchical netlist for Cell BATCHARGERcore ...
 ** info: there are 0 stdCell insts.
 ** info: there are 4 macros.
 
-*** Memory Usage v#2 (Current mem = 776.695M, initial mem = 272.281M) ***
+*** Memory Usage v#2 (Current mem = 785.211M, initial mem = 280.281M) ***
 **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -176,7 +176,7 @@ To increase the message display limit, refer to the product command reference ma
 <CMD> placeInstance BATCHbg 710.0 110.0
 <CMD> placeInstance BATCHpower 10.0 10.0
 <CMD> placeInstance BATCHsaradc 630.0 180.0
-<CMD> placeInstance BATCHctr 710.0 50.0
+<CMD> placeInstance BATCHctr 760.0 10.0
 <CMD> setDrawView place
 <CMD> setDrawView fplan
 <CMD> set sprCreateIeRingOffset 1.0
@@ -202,25 +202,25 @@ To increase the message display limit, refer to the product command reference ma
 <CMD> setPinAssignMode -pinEditInBatch true
 <CMD> editPin -fixOverlap 1 -spreadDirection counterclockwise -edge 2 -layer 1 -spreadType side -pin {{sel[0]} {sel[1]} {sel[2]} {sel[3]} en pgnd vin}
 Successfully spread [7] pins.
-editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1003.2M).
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1003.7M).
 <CMD> setPinAssignMode -pinEditInBatch false
 <CMD> getPinAssignMode -pinEditInBatch -quiet
 <CMD> setPinAssignMode -pinEditInBatch true
 <CMD> editPin -use ANALOG -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 4 -spreadType start -spacing 80.0 -offsetStart 40 -pin {iforcedbat vbattemp vsensbat}
 Successfully spread [3] pins.
-editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.2M).
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.7M).
 <CMD> setPinAssignMode -pinEditInBatch true
 <CMD> getPinAssignMode -pinEditInBatch -quiet
 <CMD> setPinAssignMode -pinEditInBatch true
 <CMD> editPin -use POWER -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 3 -spreadType center -spacing 0.4 -pin dvdd
 Successfully spread [1] pins.
-editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.2M).
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.7M).
 <CMD> setPinAssignMode -pinEditInBatch true
 <CMD> getPinAssignMode -pinEditInBatch -quiet
 <CMD> setPinAssignMode -pinEditInBatch true
 <CMD> editPin -use GROUND -pinWidth 0.2 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 1 -layer 3 -spreadType start -spacing 0.4 -offsetStart 20 -pin dgnd
 Successfully spread [1] pins.
-editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.2M).
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1004.7M).
 <CMD> setPinAssignMode -pinEditInBatch false
 <CMD> clearGlobalNets
 **WARN: (IMPDB-2078):	Output pin endvdd of instance BATCHbg is connected to power net endvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
@@ -234,8 +234,8 @@ Pre-connect netlist-defined P/G connections...
 <CMD> setAttribute -net dvdd -non_default_rule pwr
 <CMD> selectNet dgnd
 <CMD> routeDesign -selected
-#% Begin routeDesign (date=01/16 15:40:41, mem=793.7M)
-#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 793.73 (MB), peak = 801.12 (MB)
+#% Begin routeDesign (date=01/17 11:01:08, mem=843.9M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 843.95 (MB), peak = 851.81 (MB)
 **INFO: User settings:
 setNanoRouteMode -extractThirdPartyCompatible                   false
 setNanoRouteMode -grouteExpTdUseTifTimingEngineForImportDesign  true
@@ -246,22 +246,22 @@ setDelayCalMode -engine                                         aae
 #**INFO: multi-cut via swapping will be performed after routing.
 #**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
 **WARN: (IMPTRN-1101):	Could not determine power-rail locations in cells. Use default value GNDOnBtm.
-Begin checking placement ... (start mem=1002.2M, init mem=1011.1M)
+Begin checking placement ... (start mem=1002.7M, init mem=1011.7M)
 *info: Placed = 4              (Fixed = 4)
 *info: Unplaced = 0           
 Placement Density:0.00%(0/43718)
 Placement Density (including fixed std cells):0.00%(0/43718)
-Finished checkPlace (total: cpu=0:00:00.1, real=0:00:01.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1011.1M)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1011.7M)
 
 changeUseClockNetStatus Option :  -noFixedNetWires 
 *** Changed status on (0) nets in Clock.
-*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1011.1M) ***
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1011.7M) ***
 #**INFO: auto set of droutePostRouteSwapVia to multiCut
-% Begin globalDetailRoute (date=01/16 15:40:42, mem=796.6M)
+% Begin globalDetailRoute (date=01/17 11:01:08, mem=846.8M)
 
 globalDetailRoute
 
-#Start globalDetailRoute on Thu Jan 16 15:40:42 2025
+#Start globalDetailRoute on Fri Jan 17 11:01:08 2025
 #
 #Generating timing data, please wait...
 #59 total nets, 0 already routed, 0 will ignore in trialRoute
@@ -269,8 +269,8 @@ globalDetailRoute
 #Dump tif for version 2.1
 **ERROR: (IMPDC-634):	Failed to build the timing graph since timing library files have not yet been loaded. To resolve this, check that timing library files have been correctly specified in the loaded design database.
 Total number of fetched objects 93
-End delay calculation. (MEM=1067.5 CPU=0:00:00.0 REAL=0:00:00.0)
-#Generating timing data took: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 768.27 (MB), peak = 853.35 (MB)
+End delay calculation. (MEM=1058.02 CPU=0:00:00.0 REAL=0:00:00.0)
+#Generating timing data took: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 824.21 (MB), peak = 899.90 (MB)
 #Done generating timing data.
 #WARNING (NRDB-166) Boundary for CELL_VIEW BATCHARGERcore,init is not properly defined. Correct the SIZE of the corresponding MACRO in the library.
 #num needed restored net=0
@@ -278,12 +278,12 @@ End delay calculation. (MEM=1067.5 CPU=0:00:00.0 REAL=0:00:00.0)
 #WARNING (NRDB-2120) Special net endvdd is missing wiring shapes, will disable tie-net connections to this net.
 #WARNING (NRDB-2120) Special net dgnd is missing wiring shapes, will disable tie-net connections to this net.
 #WARNING (NRDB-2120) Special net dvdd is missing wiring shapes, will disable tie-net connections to this net.
-#Start reading timing information from file .timing_file_24044.tif.gz ...
+#Start reading timing information from file .timing_file_16926.tif.gz ...
 #WARNING (NRDB-194) 
 #No setup time constraints read in
-#Read in timing information for 12 ports, 4 instances from timing file .timing_file_24044.tif.gz.
+#Read in timing information for 12 ports, 4 instances from timing file .timing_file_16926.tif.gz.
 #NanoRoute Version 20.11-s130_1 NR200802-2257/20_11-UB
-#Start routing data preparation on Thu Jan 16 15:40:43 2025
+#Start routing data preparation on Fri Jan 17 11:01:09 2025
 #
 #WARNING (NRDB-2138) Ignore VIA VIA56_HH_mar_W for LAYER via5 in RULE pwr. It violates the MINCUTS 2 RULE.
 #WARNING (NRDB-2138) Ignore VIA VIA56_HH_mar_E for LAYER via5 in RULE pwr. It violates the MINCUTS 2 RULE.
@@ -323,39 +323,39 @@ End delay calculation. (MEM=1067.5 CPU=0:00:00.0 REAL=0:00:00.0)
 # metal7       H   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
 # metal8       V   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
 #Monitoring time of adding inner blkg by smac
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 778.84 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 836.77 (MB), peak = 899.90 (MB)
 #Regenerating Ggrids automatically.
 #Auto generating G-grids with size=15 tracks, using layer metal3's pitch = 0.4000.
 #Using automatically generated G-grids.
 #Done routing data preparation.
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 807.39 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 865.24 (MB), peak = 899.90 (MB)
 #
-#Finished routing data preparation on Thu Jan 16 15:40:43 2025
+#Finished routing data preparation on Fri Jan 17 11:01:09 2025
 #
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 36.03 (MB)
-#Total memory = 807.48 (MB)
-#Peak memory = 853.35 (MB)
+#Increased memory = 35.95 (MB)
+#Total memory = 865.33 (MB)
+#Peak memory = 899.90 (MB)
 #
 #
-#Start global routing on Thu Jan 16 15:40:43 2025
+#Start global routing on Fri Jan 17 11:01:09 2025
 #
 #
-#Start global routing initialization on Thu Jan 16 15:40:43 2025
+#Start global routing initialization on Fri Jan 17 11:01:09 2025
 #
 #WARNING (NRGR-21) Selected nets are already detail routed or no nets are selected.
 #Routing data preparation, pin analysis, global routing and track assignment statistics:
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 36.18 (MB)
-#Total memory = 807.54 (MB)
-#Peak memory = 853.35 (MB)
+#Increased memory = 36.09 (MB)
+#Total memory = 865.39 (MB)
+#Peak memory = 899.90 (MB)
 #
 #Start Detail Routing..
 #start 1st optimization iteration ...
 #   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 825.06 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 882.90 (MB), peak = 899.90 (MB)
 #Complete Detail Routing.
 #Total number of nets with non-default rule or having extra spacing = 4
 #Total wire length = 0 um.
@@ -378,30 +378,30 @@ End delay calculation. (MEM=1067.5 CPU=0:00:00.0 REAL=0:00:00.0)
 #Total number of DRC violations = 0
 #Cpu time = 00:00:02
 #Elapsed time = 00:00:02
-#Increased memory = 2.98 (MB)
-#Total memory = 810.52 (MB)
-#Peak memory = 853.35 (MB)
+#Increased memory = 2.97 (MB)
+#Total memory = 868.36 (MB)
+#Peak memory = 899.90 (MB)
 #detailRoute Statistics:
 #Cpu time = 00:00:02
 #Elapsed time = 00:00:02
-#Increased memory = 3.00 (MB)
-#Total memory = 810.54 (MB)
-#Peak memory = 853.35 (MB)
+#Increased memory = 2.98 (MB)
+#Total memory = 868.37 (MB)
+#Peak memory = 899.90 (MB)
 #
 #globalDetailRoute statistics:
 #Cpu time = 00:00:03
 #Elapsed time = 00:00:03
-#Increased memory = 7.98 (MB)
-#Total memory = 804.55 (MB)
-#Peak memory = 853.35 (MB)
+#Increased memory = 15.60 (MB)
+#Total memory = 862.38 (MB)
+#Peak memory = 899.90 (MB)
 #Number of warnings = 27
 #Total number of warnings = 28
 #Number of fails = 0
 #Total number of fails = 0
-#Complete globalDetailRoute on Thu Jan 16 15:40:45 2025
+#Complete globalDetailRoute on Fri Jan 17 11:01:11 2025
 #
-% End globalDetailRoute (date=01/16 15:40:45, total cpu=0:00:03.3, real=0:00:03.0, peak res=853.4M, current mem=804.8M)
-#routeDesign: cpu time = 00:00:04, elapsed time = 00:00:04, memory = 801.49 (MB), peak = 853.35 (MB)
+% End globalDetailRoute (date=01/17 11:01:11, total cpu=0:00:03.4, real=0:00:03.0, peak res=899.9M, current mem=860.6M)
+#routeDesign: cpu time = 00:00:04, elapsed time = 00:00:04, memory = 855.63 (MB), peak = 899.90 (MB)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -409,11 +409,11 @@ WARNING   IMPTRN-1101          1  Could not determine power-rail locations...
 ERROR     IMPDC-634            1  Failed to build the timing graph since t...
 *** Message Summary: 1 warning(s), 1 error(s)
 
-#% End routeDesign (date=01/16 15:40:45, total cpu=0:00:03.7, real=0:00:04.0, peak res=853.4M, current mem=801.5M)
+#% End routeDesign (date=01/17 11:01:11, total cpu=0:00:03.6, real=0:00:03.0, peak res=899.9M, current mem=855.6M)
 <CMD> setSrouteMode -viaConnectToShape { noshape }
 <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1(1) metal8(8) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal8(8) } -nets { dgnd } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1(1) metal8(8) }
-#% Begin sroute (date=01/16 15:40:45, mem=801.7M)
-*** Begin SPECIAL ROUTE on Thu Jan 16 15:40:45 2025 ***
+#% Begin sroute (date=01/17 11:01:11, mem=855.8M)
+*** Begin SPECIAL ROUTE on Fri Jan 17 11:01:11 2025 ***
 SPECIAL ROUTE ran on directory: /afs/.ist.utl.pt/users/0/4/ist1100004/DIGITAL/P_and_R/FULLCHIP/BATCHARGERcore
 SPECIAL ROUTE ran on machine: fatima.novalocal (Linux 3.10.0-1160.99.1.el7.x86_64 Xeon 2.40Ghz)
 
@@ -437,7 +437,7 @@ srouteRoutePowerBarPortOnBothDir set to true
 srouteStopBlockPin set to "nearestTarget"
 srouteTopLayerLimit set to 8
 srouteTopTargetLayerLimit set to 8
-End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2105.00 megs.
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2104.00 megs.
 
 Reading DB technology information...
 Finished reading DB technology information.
@@ -480,13 +480,13 @@ Pin and blockage extraction finished
 
 sroute created 0 wire.
 ViaGen created 0 via, deleted 0 via to avoid violation.
-#% End sroute (date=01/16 15:40:45, total cpu=0:00:00.1, real=0:00:00.0, peak res=806.6M, current mem=806.6M)
+#% End sroute (date=01/17 11:01:11, total cpu=0:00:00.1, real=0:00:00.0, peak res=860.6M, current mem=860.6M)
 <CMD> placeAIO
 Estimated cell power/ground rail width = 0.350 um
 **WARN: (IMPSP-390):	Could not determine power-rail locations, as no insts available to check PGTerms.
 INFO: #ExclusiveGroups=0
 INFO: There are no Exclusive Groups.
-*** Starting "NanoPlace(TM) placement v#15 (mem=1042.3M)" ...
+*** Starting "NanoPlace(TM) placement v#15 (mem=1041.8M)" ...
 No user-set net weight.
 Net fanout histogram:
 2		: 44 (88.0%) nets
@@ -516,59 +516,59 @@ Pin Density = 0.0004595.
             = total # of pins 106 / total area 230670.
 Applying critslk net weight for 0 nets ...
 Clock gating cells determined by native netlist tracing.
-Iteration  1: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  2: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  3: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  4: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  5: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  6: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  7: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  8: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  9: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration 10: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration 11: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration 12: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration 13: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
+Iteration  1: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  2: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  3: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  4: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  5: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  6: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  7: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  8: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  9: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration 10: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration 11: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration 12: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration 13: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
 macro_flip: HPWL decrease ratio is -nan, horizontally flipped 0, vertically flipped 0
-Iteration 14: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-*** cost = 1.633e+04 (9.87e+03 6.46e+03) (cpu for global=0:00:00.0) real=0:00:00.0***
+Iteration 14: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+*** cost = 1.755e+04 (1.00e+04 7.54e+03) (cpu for global=0:00:00.0) real=0:00:00.0***
 Info: 0 clock gating cells identified, 0 (on average) moved 0/10
 **WARN: (IMPDB-2078):	Output pin endvdd of instance BATCHbg is connected to power net endvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
 **WARN: (IMPSP-390):	Could not determine power-rail locations, as no insts available to check PGTerms.
 *** Starting IO Refinement ...
 **WARN: (IMPSP-6008):	There are no area I/O rows.
-*** End IO Refinement (cpu=0:00:00.0, real=0:00:00.0, mem=1042.3M) ***
+*** End IO Refinement (cpu=0:00:00.0, real=0:00:00.0, mem=1041.8M) ***
 INFO: #ExclusiveGroups=0
 INFO: There are no Exclusive Groups.
-*** Starting "NanoPlace(TM) placement v#15 (mem=1042.3M)" ...
+*** Starting "NanoPlace(TM) placement v#15 (mem=1041.8M)" ...
 No user-set net weight.
 Net fanout histogram:
 2		: 44 (88.0%) nets
@@ -598,73 +598,73 @@ Pin Density = 0.0004595.
             = total # of pins 106 / total area 230670.
 Applying critslk net weight for 0 nets ...
 Clock gating cells determined by native netlist tracing.
-Iteration  1: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  2: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  3: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  4: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  5: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  6: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  7: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  8: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration  9: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration 10: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration 11: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1042.3M
-Iteration 12: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-Iteration 13: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
+Iteration  1: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  2: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  3: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  4: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  5: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  6: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  7: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  8: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration  9: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+Iteration 10: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1041.8M
+Iteration 11: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1041.8M
+Iteration 12: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1041.8M
+Iteration 13: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
 macro_flip: HPWL decrease ratio is -nan, horizontally flipped 0, vertically flipped 0
-Iteration 14: Total net bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              Est.  stn bbox = 1.633e+04 (9.87e+03 6.46e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1042.3M
-*** cost = 1.633e+04 (9.87e+03 6.46e+03) (cpu for global=0:00:00.2) real=0:00:00.0***
+Iteration 14: Total net bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              Est.  stn bbox = 1.755e+04 (1.00e+04 7.54e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1041.8M
+*** cost = 1.755e+04 (1.00e+04 7.54e+03) (cpu for global=0:00:00.3) real=0:00:00.0***
 Info: 0 clock gating cells identified, 0 (on average) moved 0/18
 **WARN: (IMPDB-2078):	Output pin endvdd of instance BATCHbg is connected to power net endvdd.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is ground.  Check the connectivity in the netlist.
 **WARN: (IMPSP-9025):	No scan chain specified/traced.
 Type 'man IMPSP-9025' for more detail.
 **WARN: (IMPSP-390):	Could not determine power-rail locations, as no insts available to check PGTerms.
-*** Starting refinePlace (0:00:28.4 mem=1042.3M) ***
-Total net bbox length = 1.633e+04 (9.871e+03 6.458e+03) (ext = 5.841e+03)
+*** Starting refinePlace (0:00:27.3 mem=1041.8M) ***
+Total net bbox length = 1.755e+04 (1.001e+04 7.538e+03) (ext = 5.841e+03)
 **WARN: (IMPSP-2022):	No instances to legalize in design.
 Type 'man IMPSP-2022' for more detail.
-Total net bbox length = 1.633e+04 (9.871e+03 6.458e+03) (ext = 5.841e+03)
-Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1042.3MB
-*** Finished refinePlace (0:00:28.4 mem=1042.3M) ***
-*** End of Placement (cpu=0:00:00.3, real=0:00:00.0, mem=1042.3M) ***
+Total net bbox length = 1.755e+04 (1.001e+04 7.538e+03) (ext = 5.841e+03)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1041.8MB
+*** Finished refinePlace (0:00:27.3 mem=1041.8M) ***
+*** End of Placement (cpu=0:00:00.4, real=0:00:00.0, mem=1041.8M) ***
 **WARN: (IMPSP-390):	Could not determine power-rail locations, as no insts available to check PGTerms.
 default core: bins with density > 0.750 = 79.09 % ( 261 / 330 )
-Density distribution unevenness ratio = 13.650%
+Density distribution unevenness ratio = 13.634%
 <CMD> setAttribute -net iforcedbat -shield_net dgnd
 <CMD> setAttribute -net vbattemp -shield_net dgnd
 <CMD> setAttribute -net vsensbat -shield_net dgnd
 <CMD> selectNet -shield
 <CMD> routeDesign -selected
-#% Begin routeDesign (date=01/16 15:40:46, mem=808.2M)
-#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 808.18 (MB), peak = 853.35 (MB)
+#% Begin routeDesign (date=01/17 11:01:12, mem=862.1M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 862.08 (MB), peak = 899.90 (MB)
 Info: The option -ignoreNetLoad is different with the value of internal variable, sync the option -ignoreNetLoad to true based on the value of internal variable.
 **INFO: User settings:
 setNanoRouteMode -extractThirdPartyCompatible                   false
@@ -676,22 +676,22 @@ setDelayCalMode -ignoreNetLoad                                  true
 #**INFO: setDesignMode -flowEffort standard
 #**INFO: multi-cut via swapping will be performed after routing.
 #**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
-Begin checking placement ... (start mem=1042.3M, init mem=1042.3M)
+Begin checking placement ... (start mem=1041.8M, init mem=1041.8M)
 *info: Placed = 4              (Fixed = 4)
 *info: Unplaced = 0           
 Placement Density:0.00%(0/43718)
 Placement Density (including fixed std cells):0.00%(0/43718)
-Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1042.3M)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1041.8M)
 
 changeUseClockNetStatus Option :  -noFixedNetWires 
 *** Changed status on (0) nets in Clock.
-*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1042.3M) ***
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1041.8M) ***
 #**INFO: auto set of droutePostRouteSwapVia to multiCut
-% Begin globalDetailRoute (date=01/16 15:40:46, mem=808.2M)
+% Begin globalDetailRoute (date=01/17 11:01:12, mem=862.1M)
 
 globalDetailRoute
 
-#Start globalDetailRoute on Thu Jan 16 15:40:46 2025
+#Start globalDetailRoute on Fri Jan 17 11:01:12 2025
 #
 #Generating timing data, please wait...
 #59 total nets, 0 already routed, 0 will ignore in trialRoute
@@ -701,7 +701,6 @@ globalDetailRoute
 **ERROR: (IMPDC-634):	Failed to build the timing graph since timing library files have not yet been loaded. To resolve this, check that timing library files have been correctly specified in the loaded design database.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vin is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net pgnd is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
-**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vbat[5] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net tbat[2] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vrefb is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vrefa is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
@@ -710,7 +709,6 @@ globalDetailRoute
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net iforcedbat is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vin is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net pgnd is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
-**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vbat[5] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net tbat[2] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vrefb is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vrefa is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
@@ -719,11 +717,13 @@ globalDetailRoute
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net pgnd is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net iforcedbat is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net avdd is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net avdd is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net avdd is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (EMS-27):	Message (IMPEXT-2883) has exceeded the current message display limit of 20.
 To increase the message display limit, refer to the product command reference manual.
 Total number of fetched objects 93
-End delay calculation. (MEM=1096.15 CPU=0:00:00.0 REAL=0:00:00.0)
-#Generating timing data took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 811.99 (MB), peak = 853.35 (MB)
+End delay calculation. (MEM=1097.07 CPU=0:00:00.0 REAL=0:00:00.0)
+#Generating timing data took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 867.40 (MB), peak = 899.90 (MB)
 #Done generating timing data.
 #WARNING (NRIG-1303) Congestion map does not match the GCELL grid, clearing map.
 #num needed restored net=0
@@ -731,12 +731,12 @@ End delay calculation. (MEM=1096.15 CPU=0:00:00.0 REAL=0:00:00.0)
 #WARNING (NRDB-2120) Special net endvdd is missing wiring shapes, will disable tie-net connections to this net.
 #WARNING (NRDB-2120) Special net dgnd is missing wiring shapes, will disable tie-net connections to this net.
 #WARNING (NRDB-2120) Special net dvdd is missing wiring shapes, will disable tie-net connections to this net.
-#Start reading timing information from file .timing_file_24044.tif.gz ...
+#Start reading timing information from file .timing_file_16926.tif.gz ...
 #WARNING (NRDB-194) 
 #No setup time constraints read in
-#Read in timing information for 12 ports, 4 instances from timing file .timing_file_24044.tif.gz.
+#Read in timing information for 12 ports, 4 instances from timing file .timing_file_16926.tif.gz.
 #NanoRoute Version 20.11-s130_1 NR200802-2257/20_11-UB
-#Start routing data preparation on Thu Jan 16 15:40:47 2025
+#Start routing data preparation on Fri Jan 17 11:01:13 2025
 #
 #Minimum voltage of a net in the design = 0.000.
 #Maximum voltage of a net in the design = 3.300.
@@ -753,71 +753,71 @@ End delay calculation. (MEM=1096.15 CPU=0:00:00.0 REAL=0:00:00.0)
 # metal7       H   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
 # metal8       V   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
 #Monitoring time of adding inner blkg by smac
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 817.70 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 873.35 (MB), peak = 899.90 (MB)
 #Regenerating Ggrids automatically.
 #Auto generating G-grids with size=15 tracks, using layer metal3's pitch = 0.4000.
 #Using automatically generated G-grids.
 #Done routing data preparation.
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 834.32 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 889.95 (MB), peak = 899.90 (MB)
 #
-#Finished routing data preparation on Thu Jan 16 15:40:47 2025
+#Finished routing data preparation on Fri Jan 17 11:01:13 2025
 #
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 20.89 (MB)
-#Total memory = 834.33 (MB)
-#Peak memory = 853.35 (MB)
+#Increased memory = 21.10 (MB)
+#Total memory = 889.95 (MB)
+#Peak memory = 899.90 (MB)
 #
 #
-#Start global routing on Thu Jan 16 15:40:47 2025
+#Start global routing on Fri Jan 17 11:01:13 2025
 #
 #
-#Start global routing initialization on Thu Jan 16 15:40:47 2025
+#Start global routing initialization on Fri Jan 17 11:01:13 2025
 #
 #Number of eco nets is 0
 #
-#Start global routing data preparation on Thu Jan 16 15:40:47 2025
+#Start global routing data preparation on Fri Jan 17 11:01:13 2025
 #
-#Start routing resource analysis on Thu Jan 16 15:40:47 2025
+#Start routing resource analysis on Fri Jan 17 11:01:13 2025
 #
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
-#Routing resource analysis is done on Thu Jan 16 15:40:47 2025
+#Routing resource analysis is done on Fri Jan 17 11:01:13 2025
 #
 #  Resource Analysis:
 #
 #               Routing  #Avail      #Track     #Total     %Gcell
 #  Layer      Direction   Track     Blocked      Gcell    Blocked
 #  --------------------------------------------------------------
-#  metal1         H         175         625        7526    78.18%
-#  metal2         V         452        1673        7526    78.09%
-#  metal3         H         175         625        7526    78.18%
-#  metal4         V         452        1673        7526    78.09%
-#  metal5         H         175         625        7526    78.18%
-#  metal6         V         452        1673        7526    78.09%
-#  metal7         H          87         313        7526    78.18%
-#  metal8         V         225         837        7526    78.18%
+#  metal1         H         176         624        7526    77.94%
+#  metal2         V         455        1670        7526    77.85%
+#  metal3         H         175         625        7526    77.94%
+#  metal4         V         455        1670        7526    77.85%
+#  metal5         H         175         625        7526    77.94%
+#  metal6         V         456        1669        7526    77.85%
+#  metal7         H          87         313        7526    77.94%
+#  metal8         V         227         835        7526    77.94%
 #  --------------------------------------------------------------
-#  Total                   2194      78.44%       60208    78.15%
+#  Total                   2209      78.31%       60208    77.91%
 #
 #  3 nets (2.22%) with 1 preferred extra spacing.
 #
 #
 #
-#Global routing data preparation is done on Thu Jan 16 15:40:47 2025
+#Global routing data preparation is done on Fri Jan 17 11:01:13 2025
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 835.92 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 891.55 (MB), peak = 899.90 (MB)
 #
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
 #
-#Global routing initialization is done on Thu Jan 16 15:40:47 2025
+#Global routing initialization is done on Fri Jan 17 11:01:13 2025
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 835.99 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 891.62 (MB), peak = 899.90 (MB)
 #
 #start global routing iteration 1...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 840.75 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 896.36 (MB), peak = 899.90 (MB)
 #
 #start global routing iteration 2...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 840.84 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 896.45 (MB), peak = 899.90 (MB)
 #
 #
 #Total number of trivial nets (e.g. < 2 pins) = 84 (skipped).
@@ -890,9 +890,9 @@ End delay calculation. (MEM=1096.15 CPU=0:00:00.0 REAL=0:00:00.0)
 Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00/0.00 (area is in unit of 4 std-cell row bins)
 #Complete Global Routing.
 #Total number of nets with non-default rule or having extra spacing = 7
-#Total wire length = 2336 um.
+#Total wire length = 2335 um.
 #Total half perimeter of net bounding box = 2306 um.
-#Total wire length on LAYER metal1 = 403 um.
+#Total wire length on LAYER metal1 = 402 um.
 #Total wire length on LAYER metal2 = 353 um.
 #Total wire length on LAYER metal3 = 905 um.
 #Total wire length on LAYER metal4 = 312 um.
@@ -918,22 +918,22 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #Global routing statistics:
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 6.15 (MB)
-#Total memory = 840.48 (MB)
-#Peak memory = 853.35 (MB)
+#Increased memory = 6.14 (MB)
+#Total memory = 896.09 (MB)
+#Peak memory = 899.90 (MB)
 #
-#Finished global routing on Thu Jan 16 15:40:47 2025
+#Finished global routing on Fri Jan 17 11:01:13 2025
 #
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 839.47 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 895.08 (MB), peak = 899.90 (MB)
 #Start Track Assignment.
 #Done with 7 horizontal wires in 2 hboxes and 5 vertical wires in 5 hboxes.
 #Done with 1 horizontal wires in 2 hboxes and 0 vertical wires in 5 hboxes.
 #Complete Track Assignment.
 #Total number of nets with non-default rule or having extra spacing = 7
-#Total wire length = 2338 um.
+#Total wire length = 2337 um.
 #Total half perimeter of net bounding box = 2306 um.
-#Total wire length on LAYER metal1 = 412 um.
+#Total wire length on LAYER metal1 = 411 um.
 #Total wire length on LAYER metal2 = 353 um.
 #Total wire length on LAYER metal3 = 904 um.
 #Total wire length on LAYER metal4 = 309 um.
@@ -952,20 +952,20 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #-----------------------
 #                    11 
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 839.70 (MB), peak = 853.35 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 895.30 (MB), peak = 899.90 (MB)
 #
 #Routing data preparation, pin analysis, global routing and track assignment statistics:
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 26.25 (MB)
-#Total memory = 839.70 (MB)
-#Peak memory = 853.35 (MB)
+#Increased memory = 26.45 (MB)
+#Total memory = 895.30 (MB)
+#Peak memory = 899.90 (MB)
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
 #
 #Start Detail Routing..
 #start initial detail routing ...
 #   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 857.89 (MB), peak = 884.23 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 913.05 (MB), peak = 938.54 (MB)
 #Complete Detail Routing.
 #Total number of nets with non-default rule or having extra spacing = 7
 #Total wire length = 2331 um.
@@ -992,9 +992,9 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #Total number of DRC violations = 0
 #Cpu time = 00:00:02
 #Elapsed time = 00:00:02
-#Increased memory = 4.09 (MB)
-#Total memory = 843.79 (MB)
-#Peak memory = 884.23 (MB)
+#Increased memory = 3.64 (MB)
+#Total memory = 898.95 (MB)
+#Peak memory = 938.54 (MB)
 #Set shielded net as skip routing for Post Route optimization.
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
 #WARNING (NRDR-32) All the nets are fixed, skipped, or trivial nets. Post Route via swapping cannot be run.
@@ -1029,37 +1029,37 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #detailRoute Statistics:
 #Cpu time = 00:00:02
 #Elapsed time = 00:00:02
-#Increased memory = 4.12 (MB)
-#Total memory = 843.82 (MB)
-#Peak memory = 884.23 (MB)
+#Increased memory = 3.67 (MB)
+#Total memory = 898.98 (MB)
+#Peak memory = 938.54 (MB)
 #
 #globalDetailRoute statistics:
 #Cpu time = 00:00:03
 #Elapsed time = 00:00:03
-#Increased memory = 19.29 (MB)
-#Total memory = 827.47 (MB)
-#Peak memory = 884.23 (MB)
+#Increased memory = 20.78 (MB)
+#Total memory = 882.86 (MB)
+#Peak memory = 938.54 (MB)
 #Number of warnings = 11
 #Total number of warnings = 40
 #Number of fails = 0
 #Total number of fails = 0
-#Complete globalDetailRoute on Thu Jan 16 15:40:49 2025
+#Complete globalDetailRoute on Fri Jan 17 11:01:15 2025
 #
-% End globalDetailRoute (date=01/16 15:40:49, total cpu=0:00:02.8, real=0:00:03.0, peak res=884.2M, current mem=826.7M)
-#routeDesign: cpu time = 00:00:03, elapsed time = 00:00:03, memory = 824.39 (MB), peak = 884.23 (MB)
+% End globalDetailRoute (date=01/17 11:01:15, total cpu=0:00:02.9, real=0:00:03.0, peak res=938.5M, current mem=882.2M)
+#routeDesign: cpu time = 00:00:03, elapsed time = 00:00:03, memory = 878.01 (MB), peak = 938.54 (MB)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
 WARNING   IMPEXT-6197          1  The Cap table file is not specified. Thi...
-WARNING   IMPEXT-2883         43  The resistance extracted for a wire belo...
+WARNING   IMPEXT-2883         40  The resistance extracted for a wire belo...
 WARNING   IMPEXT-3530          1  The process node is not set. Use the com...
 ERROR     IMPDC-634            1  Failed to build the timing graph since t...
-*** Message Summary: 45 warning(s), 1 error(s)
+*** Message Summary: 42 warning(s), 1 error(s)
 
-#% End routeDesign (date=01/16 15:40:49, total cpu=0:00:03.0, real=0:00:03.0, peak res=884.2M, current mem=824.4M)
+#% End routeDesign (date=01/17 11:01:15, total cpu=0:00:03.1, real=0:00:03.0, peak res=938.5M, current mem=878.0M)
 <CMD> routeDesign -globalDetail
-#% Begin routeDesign (date=01/16 15:40:49, mem=824.4M)
-#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 824.39 (MB), peak = 884.23 (MB)
+#% Begin routeDesign (date=01/17 11:01:15, mem=878.0M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 878.01 (MB), peak = 938.54 (MB)
 Info: The option -ignoreNetLoad is different with the value of internal variable, sync the option -ignoreNetLoad to false based on the value of internal variable.
 #WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
 **INFO: User settings:
@@ -1073,21 +1073,21 @@ setDelayCalMode -ignoreNetLoad                                  false
 #**INFO: setDesignMode -flowEffort standard
 #**INFO: multi-cut via swapping will not be performed after routing.
 #**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
-Begin checking placement ... (start mem=1046.2M, init mem=1062.2M)
+Begin checking placement ... (start mem=1045.7M, init mem=1061.7M)
 *info: Placed = 4              (Fixed = 4)
 *info: Unplaced = 0           
 Placement Density:0.00%(0/43718)
 Placement Density (including fixed std cells):0.00%(0/43718)
-Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1062.2M)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1061.7M)
 
 changeUseClockNetStatus Option :  -noFixedNetWires 
 *** Changed status on (0) nets in Clock.
-*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1062.2M) ***
-% Begin globalDetailRoute (date=01/16 15:40:49, mem=824.4M)
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1061.7M) ***
+% Begin globalDetailRoute (date=01/17 11:01:15, mem=878.0M)
 
 globalDetailRoute
 
-#Start globalDetailRoute on Thu Jan 16 15:40:49 2025
+#Start globalDetailRoute on Fri Jan 17 11:01:15 2025
 #
 #Generating timing data, please wait...
 #59 total nets, 3 already routed, 3 will ignore in trialRoute
@@ -1097,7 +1097,7 @@ globalDetailRoute
 **ERROR: (IMPDC-634):	Failed to build the timing graph since timing library files have not yet been loaded. To resolve this, check that timing library files have been correctly specified in the loaded design database.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vin is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net pgnd is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
-**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vbat[5] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vbat[7] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net tbat[2] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vrefb is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vrefa is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
@@ -1105,7 +1105,7 @@ globalDetailRoute
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net ibias1ua is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vin is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net pgnd is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
-**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vbat[5] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vbat[7] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net tbat[2] is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vrefb is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
 **WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net vrefa is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
@@ -1118,8 +1118,8 @@ globalDetailRoute
 **WARN: (EMS-27):	Message (IMPEXT-2883) has exceeded the current message display limit of 20.
 To increase the message display limit, refer to the product command reference manual.
 Total number of fetched objects 93
-End delay calculation. (MEM=1116.03 CPU=0:00:00.0 REAL=0:00:00.0)
-#Generating timing data took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 825.31 (MB), peak = 884.23 (MB)
+End delay calculation. (MEM=1107.96 CPU=0:00:00.0 REAL=0:00:00.0)
+#Generating timing data took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 881.14 (MB), peak = 938.54 (MB)
 #Done generating timing data.
 #WARNING (NRIG-1303) Congestion map does not match the GCELL grid, clearing map.
 #num needed restored net=0
@@ -1127,12 +1127,12 @@ End delay calculation. (MEM=1116.03 CPU=0:00:00.0 REAL=0:00:00.0)
 #WARNING (NRDB-2120) Special net endvdd is missing wiring shapes, will disable tie-net connections to this net.
 #WARNING (NRDB-2120) Special net dgnd is missing wiring shapes, will disable tie-net connections to this net.
 #WARNING (NRDB-2120) Special net dvdd is missing wiring shapes, will disable tie-net connections to this net.
-#Start reading timing information from file .timing_file_24044.tif.gz ...
+#Start reading timing information from file .timing_file_16926.tif.gz ...
 #WARNING (NRDB-194) 
 #No setup time constraints read in
-#Read in timing information for 12 ports, 4 instances from timing file .timing_file_24044.tif.gz.
+#Read in timing information for 12 ports, 4 instances from timing file .timing_file_16926.tif.gz.
 #NanoRoute Version 20.11-s130_1 NR200802-2257/20_11-UB
-#Start routing data preparation on Thu Jan 16 15:40:50 2025
+#Start routing data preparation on Fri Jan 17 11:01:16 2025
 #
 #Minimum voltage of a net in the design = 0.000.
 #Maximum voltage of a net in the design = 3.300.
@@ -1150,71 +1150,71 @@ End delay calculation. (MEM=1116.03 CPU=0:00:00.0 REAL=0:00:00.0)
 # metal7       H   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
 # metal8       V   Track-Pitch = 0.8000    Line-2-Via Pitch = 0.8000
 #Monitoring time of adding inner blkg by smac
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 830.71 (MB), peak = 884.23 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 888.54 (MB), peak = 938.54 (MB)
 #Regenerating Ggrids automatically.
 #Auto generating G-grids with size=15 tracks, using layer metal3's pitch = 0.4000.
 #Using automatically generated G-grids.
 #Done routing data preparation.
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 844.14 (MB), peak = 884.23 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 902.14 (MB), peak = 938.54 (MB)
 #
-#Finished routing data preparation on Thu Jan 16 15:40:50 2025
+#Finished routing data preparation on Fri Jan 17 11:01:16 2025
 #
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 17.62 (MB)
-#Total memory = 844.14 (MB)
-#Peak memory = 884.23 (MB)
+#Increased memory = 17.79 (MB)
+#Total memory = 902.14 (MB)
+#Peak memory = 938.54 (MB)
 #
 #
-#Start global routing on Thu Jan 16 15:40:50 2025
+#Start global routing on Fri Jan 17 11:01:16 2025
 #
 #
-#Start global routing initialization on Thu Jan 16 15:40:50 2025
+#Start global routing initialization on Fri Jan 17 11:01:16 2025
 #
 #Number of eco nets is 0
 #
-#Start global routing data preparation on Thu Jan 16 15:40:50 2025
+#Start global routing data preparation on Fri Jan 17 11:01:16 2025
 #
-#Start routing resource analysis on Thu Jan 16 15:40:50 2025
+#Start routing resource analysis on Fri Jan 17 11:01:16 2025
 #
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
-#Routing resource analysis is done on Thu Jan 16 15:40:50 2025
+#Routing resource analysis is done on Fri Jan 17 11:01:16 2025
 #
 #  Resource Analysis:
 #
 #               Routing  #Avail      #Track     #Total     %Gcell
 #  Layer      Direction   Track     Blocked      Gcell    Blocked
 #  --------------------------------------------------------------
-#  metal1         H         175         625        7526    78.18%
-#  metal2         V         452        1673        7526    78.09%
-#  metal3         H         175         625        7526    78.18%
-#  metal4         V         452        1673        7526    78.09%
-#  metal5         H         175         625        7526    78.18%
-#  metal6         V         452        1673        7526    78.09%
-#  metal7         H          87         313        7526    78.18%
-#  metal8         V         225         837        7526    78.18%
+#  metal1         H         176         624        7526    77.94%
+#  metal2         V         455        1670        7526    77.85%
+#  metal3         H         175         625        7526    77.94%
+#  metal4         V         455        1670        7526    77.85%
+#  metal5         H         175         625        7526    77.94%
+#  metal6         V         456        1669        7526    77.85%
+#  metal7         H          87         313        7526    77.94%
+#  metal8         V         227         835        7526    77.94%
 #  --------------------------------------------------------------
-#  Total                   2194      78.44%       60208    78.15%
+#  Total                   2209      78.31%       60208    77.91%
 #
 #  3 nets (2.22%) with 1 preferred extra spacing.
 #
 #
 #
-#Global routing data preparation is done on Thu Jan 16 15:40:50 2025
+#Global routing data preparation is done on Fri Jan 17 11:01:16 2025
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 845.50 (MB), peak = 884.23 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 903.51 (MB), peak = 938.54 (MB)
 #
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
 #
-#Global routing initialization is done on Thu Jan 16 15:40:50 2025
+#Global routing initialization is done on Fri Jan 17 11:01:16 2025
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 845.50 (MB), peak = 884.23 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 903.51 (MB), peak = 938.54 (MB)
 #
 #start global routing iteration 1...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 849.49 (MB), peak = 884.23 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 907.61 (MB), peak = 938.54 (MB)
 #
 #start global routing iteration 2...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 849.49 (MB), peak = 884.23 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 907.61 (MB), peak = 938.54 (MB)
 #
 #
 #Total number of trivial nets (e.g. < 2 pins) = 84 (skipped).
@@ -1252,7 +1252,7 @@ End delay calculation. (MEM=1116.03 CPU=0:00:00.0 REAL=0:00:00.0)
 #                  #Gcell    %Gcell
 #     Layer           (1)   OverCon
 #  --------------------------------
-#  metal1        0(0.00%)   (0.00%)
+#  metal1        1(0.06%)   (0.06%)
 #  metal2        0(0.00%)   (0.00%)
 #  metal3        0(0.00%)   (0.00%)
 #  metal4        0(0.00%)   (0.00%)
@@ -1261,10 +1261,10 @@ End delay calculation. (MEM=1116.03 CPU=0:00:00.0 REAL=0:00:00.0)
 #  metal7        0(0.00%)   (0.00%)
 #  metal8        0(0.00%)   (0.00%)
 #  --------------------------------
-#     Total      0(0.00%)   (0.00%)
+#     Total      1(0.01%)   (0.01%)
 #
 #  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
-#  Overflow after GR: 0.00% H + 0.00% V
+#  Overflow after GR: 0.01% H + 0.00% V
 #
 #Hotspot report including placement blocked areas
 [hotspot] +----------------+-------------------+-------------------+-------------------------------------+
@@ -1281,98 +1281,104 @@ End delay calculation. (MEM=1116.03 CPU=0:00:00.0 REAL=0:00:00.0)
 [hotspot] +----------------+-------------------+-------------------+-------------------------------------+
 [hotspot] |      worst     |              0.00 |              0.00 |                                     |
 [hotspot] +----------------+-------------------+-------------------+-------------------------------------+
-[hotspot] |   all layers   |              0.00 |              0.00 |                                     |
+[hotspot] |   all layers   |              1.00 |              1.00 |                                     |
 [hotspot] +----------------+-------------------+-------------------+-------------------------------------+
-Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00/0.00 (area is in unit of 4 std-cell row bins)
+Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 1.00/1.00 (area is in unit of 4 std-cell row bins)
+[hotspot] top 1 congestion hotspot bounding boxes and scores of all layers hotspot
+[hotspot] +-----+-------------------------------------+---------------+
+[hotspot] | top |            hotspot bbox             | hotspot score |
+[hotspot] +-----+-------------------------------------+---------------+
+[hotspot] |  1  |   817.59   111.99   828.79   123.19 |        1.00   |
+[hotspot] +-----+-------------------------------------+---------------+
 #Complete Global Routing.
 #Total number of nets with non-default rule or having extra spacing = 7
-#Total wire length = 21012 um.
-#Total half perimeter of net bounding box = 16960 um.
-#Total wire length on LAYER metal1 = 9494 um.
-#Total wire length on LAYER metal2 = 6148 um.
-#Total wire length on LAYER metal3 = 3425 um.
-#Total wire length on LAYER metal4 = 845 um.
-#Total wire length on LAYER metal5 = 967 um.
-#Total wire length on LAYER metal6 = 133 um.
+#Total wire length = 21486 um.
+#Total half perimeter of net bounding box = 18226 um.
+#Total wire length on LAYER metal1 = 8690 um.
+#Total wire length on LAYER metal2 = 6329 um.
+#Total wire length on LAYER metal3 = 3599 um.
+#Total wire length on LAYER metal4 = 1714 um.
+#Total wire length on LAYER metal5 = 975 um.
+#Total wire length on LAYER metal6 = 180 um.
 #Total wire length on LAYER metal7 = 0 um.
 #Total wire length on LAYER metal8 = 0 um.
-#Total number of vias = 226
-#Up-Via Summary (total 226):
+#Total number of vias = 252
+#Up-Via Summary (total 252):
 #           
 #-----------------------
 # metal1            164
-# metal2             37
-# metal3             20
-# metal4              4
-# metal5              1
+# metal2             45
+# metal3             34
+# metal4              6
+# metal5              3
 #-----------------------
-#                   226 
+#                   252 
 #
-#Max overcon = 0 track.
-#Total overcon = 0.00%.
+#Max overcon = 1 tracks.
+#Total overcon = 0.01%.
 #Worst layer Gcell overcon rate = 0.00%.
 #
 #Global routing statistics:
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 4.60 (MB)
-#Total memory = 848.74 (MB)
-#Peak memory = 884.23 (MB)
+#Increased memory = 4.75 (MB)
+#Total memory = 906.89 (MB)
+#Peak memory = 938.54 (MB)
 #
-#Finished global routing on Thu Jan 16 15:40:50 2025
+#Finished global routing on Fri Jan 17 11:01:16 2025
 #
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 847.73 (MB), peak = 884.23 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 905.88 (MB), peak = 938.54 (MB)
 #Start Track Assignment.
-#Done with 124 horizontal wires in 2 hboxes and 99 vertical wires in 5 hboxes.
-#Done with 26 horizontal wires in 2 hboxes and 7 vertical wires in 5 hboxes.
+#Done with 130 horizontal wires in 2 hboxes and 112 vertical wires in 5 hboxes.
+#Done with 22 horizontal wires in 2 hboxes and 9 vertical wires in 5 hboxes.
 #Done with 2 horizontal wires in 2 hboxes and 5 vertical wires in 5 hboxes.
 #
 #Track assignment summary:
 # layer   (wire length)   (overlap)     (long ovlp)	(with obs/pg/clk)  
 #------------------------------------------------------------------------
-# metal1      8537.84 	  0.46%  	  0.00% 	  0.46%
-# metal2      5755.60 	  0.00%  	  0.00% 	  0.00%
-# metal3      2538.00 	  0.00%  	  0.00% 	  0.00%
-# metal4       538.60 	  0.00%  	  0.00% 	  0.00%
-# metal5       604.20 	  0.00%  	  0.00% 	  0.00%
-# metal6       126.60 	  0.00%  	  0.00% 	  0.00%
+# metal1      7736.80 	  0.51%  	  0.00% 	  0.51%
+# metal2      5926.60 	  0.00%  	  0.00% 	  0.00%
+# metal3      2691.80 	  0.00%  	  0.00% 	  0.00%
+# metal4      1406.60 	  0.00%  	  0.00% 	  0.00%
+# metal5       618.80 	  0.00%  	  0.00% 	  0.00%
+# metal6       177.60 	  0.00%  	  0.00% 	  0.00%
 # metal7         0.00 	  0.00%  	  0.00% 	  0.00%
 # metal8         0.00 	  0.00%  	  0.00% 	  0.00%
 #------------------------------------------------------------------------
-# All       18100.84  	  0.22% 	  0.00% 	  0.00%
+# All       18558.20  	  0.21% 	  0.00% 	  0.00%
 #Complete Track Assignment.
 #Total number of nets with non-default rule or having extra spacing = 7
-#Total wire length = 21016 um.
-#Total half perimeter of net bounding box = 16960 um.
-#Total wire length on LAYER metal1 = 9502 um.
-#Total wire length on LAYER metal2 = 6137 um.
-#Total wire length on LAYER metal3 = 3437 um.
-#Total wire length on LAYER metal4 = 844 um.
-#Total wire length on LAYER metal5 = 965 um.
-#Total wire length on LAYER metal6 = 132 um.
+#Total wire length = 21504 um.
+#Total half perimeter of net bounding box = 18226 um.
+#Total wire length on LAYER metal1 = 8723 um.
+#Total wire length on LAYER metal2 = 6296 um.
+#Total wire length on LAYER metal3 = 3590 um.
+#Total wire length on LAYER metal4 = 1725 um.
+#Total wire length on LAYER metal5 = 979 um.
+#Total wire length on LAYER metal6 = 191 um.
 #Total wire length on LAYER metal7 = 0 um.
 #Total wire length on LAYER metal8 = 0 um.
-#Total number of vias = 226
-#Up-Via Summary (total 226):
+#Total number of vias = 252
+#Up-Via Summary (total 252):
 #           
 #-----------------------
 # metal1            164
-# metal2             37
-# metal3             20
-# metal4              4
-# metal5              1
+# metal2             45
+# metal3             34
+# metal4              6
+# metal5              3
 #-----------------------
-#                   226 
+#                   252 
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 847.76 (MB), peak = 884.23 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 905.91 (MB), peak = 938.54 (MB)
 #
 #Routing data preparation, pin analysis, global routing and track assignment statistics:
-#Cpu time = 00:00:00
-#Elapsed time = 00:00:00
-#Increased memory = 21.25 (MB)
-#Total memory = 847.76 (MB)
-#Peak memory = 884.23 (MB)
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 21.56 (MB)
+#Total memory = 905.91 (MB)
+#Peak memory = 938.54 (MB)
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
 #
 #Start Detail Routing..
@@ -1385,42 +1391,42 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #	metal2        0        0
 #	metal3        2        2
 #	Totals        2        2
-#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 866.52 (MB), peak = 904.52 (MB)
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 925.40 (MB), peak = 974.57 (MB)
 #start 1st optimization iteration ...
 #   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 867.22 (MB), peak = 904.52 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 925.64 (MB), peak = 974.57 (MB)
 #Complete Detail Routing.
 #Total number of nets with non-default rule or having extra spacing = 7
-#Total wire length = 20742 um.
-#Total half perimeter of net bounding box = 16960 um.
-#Total wire length on LAYER metal1 = 8797 um.
-#Total wire length on LAYER metal2 = 6166 um.
-#Total wire length on LAYER metal3 = 3714 um.
-#Total wire length on LAYER metal4 = 964 um.
-#Total wire length on LAYER metal5 = 972 um.
-#Total wire length on LAYER metal6 = 128 um.
+#Total wire length = 21226 um.
+#Total half perimeter of net bounding box = 18226 um.
+#Total wire length on LAYER metal1 = 8116 um.
+#Total wire length on LAYER metal2 = 6209 um.
+#Total wire length on LAYER metal3 = 3723 um.
+#Total wire length on LAYER metal4 = 1951 um.
+#Total wire length on LAYER metal5 = 1052 um.
+#Total wire length on LAYER metal6 = 174 um.
 #Total wire length on LAYER metal7 = 0 um.
 #Total wire length on LAYER metal8 = 0 um.
-#Total number of vias = 314
-#Total number of multi-cut vias = 15 (  4.8%)
-#Total number of single cut vias = 299 ( 95.2%)
-#Up-Via Summary (total 314):
+#Total number of vias = 328
+#Total number of multi-cut vias = 14 (  4.3%)
+#Total number of single cut vias = 314 ( 95.7%)
+#Up-Via Summary (total 328):
 #                   single-cut          multi-cut      Total
 #-----------------------------------------------------------
-# metal1           223 ( 98.7%)         3 (  1.3%)        226
-# metal2            50 ( 89.3%)         6 ( 10.7%)         56
-# metal3            19 ( 76.0%)         6 ( 24.0%)         25
-# metal4             6 (100.0%)         0 (  0.0%)          6
-# metal5             1 (100.0%)         0 (  0.0%)          1
+# metal1           213 ( 99.1%)         2 (  0.9%)        215
+# metal2            57 ( 90.5%)         6 (  9.5%)         63
+# metal3            33 ( 84.6%)         6 ( 15.4%)         39
+# metal4             8 (100.0%)         0 (  0.0%)          8
+# metal5             3 (100.0%)         0 (  0.0%)          3
 #-----------------------------------------------------------
-#                  299 ( 95.2%)        15 (  4.8%)        314 
+#                  314 ( 95.7%)        14 (  4.3%)        328 
 #
 #Total number of DRC violations = 0
 #Cpu time = 00:00:04
 #Elapsed time = 00:00:04
-#Increased memory = 4.20 (MB)
-#Total memory = 851.96 (MB)
-#Peak memory = 904.52 (MB)
+#Increased memory = 4.33 (MB)
+#Total memory = 910.24 (MB)
+#Peak memory = 974.57 (MB)
 #Set shielded net as skip routing for Post Route optimization.
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
 #
@@ -1430,53 +1436,53 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #Start DRC checking..
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
 #   number of violations = 0
-#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 865.57 (MB), peak = 904.52 (MB)
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 924.37 (MB), peak = 974.57 (MB)
 #CELL_VIEW BATCHARGERcore,init has no DRC violation.
 #Total number of DRC violations = 0
 #
 #Start data preparation for wire spreading...
 #
-#Data preparation is done on Thu Jan 16 15:40:56 2025
+#Data preparation is done on Fri Jan 17 11:01:23 2025
 #
 #
 #Start Post Route Wire Spread.
-#Done with 47 horizontal wires in 3 hboxes and 23 vertical wires in 9 hboxes.
+#Done with 42 horizontal wires in 3 hboxes and 21 vertical wires in 9 hboxes.
 #Complete Post Route Wire Spread.
 #
 #Total number of nets with non-default rule or having extra spacing = 4
-#Total wire length = 18469 um.
-#Total half perimeter of net bounding box = 14653 um.
-#Total wire length on LAYER metal1 = 8440 um.
-#Total wire length on LAYER metal2 = 5821 um.
-#Total wire length on LAYER metal3 = 2818 um.
-#Total wire length on LAYER metal4 = 650 um.
-#Total wire length on LAYER metal5 = 611 um.
-#Total wire length on LAYER metal6 = 128 um.
+#Total wire length = 18951 um.
+#Total half perimeter of net bounding box = 15919 um.
+#Total wire length on LAYER metal1 = 7756 um.
+#Total wire length on LAYER metal2 = 5861 um.
+#Total wire length on LAYER metal3 = 2826 um.
+#Total wire length on LAYER metal4 = 1641 um.
+#Total wire length on LAYER metal5 = 692 um.
+#Total wire length on LAYER metal6 = 176 um.
 #Total wire length on LAYER metal7 = 0 um.
 #Total wire length on LAYER metal8 = 0 um.
-#Total number of vias = 297
-#Total number of multi-cut vias = 15 (  5.1%)
-#Total number of single cut vias = 282 ( 94.9%)
-#Up-Via Summary (total 297):
+#Total number of vias = 311
+#Total number of multi-cut vias = 14 (  4.5%)
+#Total number of single cut vias = 297 ( 95.5%)
+#Up-Via Summary (total 311):
 #                   single-cut          multi-cut      Total
 #-----------------------------------------------------------
-# metal1           214 ( 98.6%)         3 (  1.4%)        217
-# metal2            47 ( 88.7%)         6 ( 11.3%)         53
-# metal3            17 ( 73.9%)         6 ( 26.1%)         23
-# metal4             3 (100.0%)         0 (  0.0%)          3
-# metal5             1 (100.0%)         0 (  0.0%)          1
+# metal1           204 ( 99.0%)         2 (  1.0%)        206
+# metal2            54 ( 90.0%)         6 ( 10.0%)         60
+# metal3            31 ( 83.8%)         6 ( 16.2%)         37
+# metal4             5 (100.0%)         0 (  0.0%)          5
+# metal5             3 (100.0%)         0 (  0.0%)          3
 #-----------------------------------------------------------
-#                  282 ( 94.9%)        15 (  5.1%)        297 
+#                  297 ( 95.5%)        14 (  4.5%)        311 
 #
 #
 #Start DRC checking..
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
 #   number of violations = 0
-#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 865.20 (MB), peak = 904.52 (MB)
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 925.46 (MB), peak = 974.57 (MB)
 #CELL_VIEW BATCHARGERcore,init has no DRC violation.
 #Total number of DRC violations = 0
 #   number of violations = 0
-#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 865.20 (MB), peak = 904.52 (MB)
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 925.46 (MB), peak = 974.57 (MB)
 #CELL_VIEW BATCHARGERcore,init has no DRC violation.
 #Total number of DRC violations = 0
 #Post Route wire spread is done.
@@ -1487,51 +1493,51 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #WARNING (NRDB-788) missing SPECIAL NET (dgnd) wire for shielding connection. NanoRoute requires power and ground special nets prior to shielding. Check that you have special net routing and have run globalNetConnection.
 #Average ratio              : 0.000
 #Total number of nets with non-default rule or having extra spacing = 7
-#Total wire length = 20800 um.
-#Total half perimeter of net bounding box = 16960 um.
-#Total wire length on LAYER metal1 = 8826 um.
-#Total wire length on LAYER metal2 = 6186 um.
-#Total wire length on LAYER metal3 = 3722 um.
-#Total wire length on LAYER metal4 = 965 um.
-#Total wire length on LAYER metal5 = 972 um.
-#Total wire length on LAYER metal6 = 128 um.
+#Total wire length = 21282 um.
+#Total half perimeter of net bounding box = 18226 um.
+#Total wire length on LAYER metal1 = 8142 um.
+#Total wire length on LAYER metal2 = 6226 um.
+#Total wire length on LAYER metal3 = 3730 um.
+#Total wire length on LAYER metal4 = 1955 um.
+#Total wire length on LAYER metal5 = 1053 um.
+#Total wire length on LAYER metal6 = 176 um.
 #Total wire length on LAYER metal7 = 0 um.
 #Total wire length on LAYER metal8 = 0 um.
-#Total number of vias = 314
-#Total number of multi-cut vias = 15 (  4.8%)
-#Total number of single cut vias = 299 ( 95.2%)
-#Up-Via Summary (total 314):
+#Total number of vias = 328
+#Total number of multi-cut vias = 14 (  4.3%)
+#Total number of single cut vias = 314 ( 95.7%)
+#Up-Via Summary (total 328):
 #                   single-cut          multi-cut      Total
 #-----------------------------------------------------------
-# metal1           223 ( 98.7%)         3 (  1.3%)        226
-# metal2            50 ( 89.3%)         6 ( 10.7%)         56
-# metal3            19 ( 76.0%)         6 ( 24.0%)         25
-# metal4             6 (100.0%)         0 (  0.0%)          6
-# metal5             1 (100.0%)         0 (  0.0%)          1
+# metal1           213 ( 99.1%)         2 (  0.9%)        215
+# metal2            57 ( 90.5%)         6 (  9.5%)         63
+# metal3            33 ( 84.6%)         6 ( 15.4%)         39
+# metal4             8 (100.0%)         0 (  0.0%)          8
+# metal5             3 (100.0%)         0 (  0.0%)          3
 #-----------------------------------------------------------
-#                  299 ( 95.2%)        15 (  4.8%)        314 
+#                  314 ( 95.7%)        14 (  4.3%)        328 
 #
 #detailRoute Statistics:
-#Cpu time = 00:00:07
-#Elapsed time = 00:00:07
-#Increased memory = 3.56 (MB)
-#Total memory = 851.32 (MB)
-#Peak memory = 904.52 (MB)
-#
-#globalDetailRoute statistics:
 #Cpu time = 00:00:08
 #Elapsed time = 00:00:08
-#Increased memory = 11.34 (MB)
-#Total memory = 835.76 (MB)
-#Peak memory = 904.52 (MB)
+#Increased memory = 5.68 (MB)
+#Total memory = 911.59 (MB)
+#Peak memory = 974.57 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:09
+#Elapsed time = 00:00:09
+#Increased memory = 17.95 (MB)
+#Total memory = 896.00 (MB)
+#Peak memory = 974.57 (MB)
 #Number of warnings = 13
 #Total number of warnings = 54
 #Number of fails = 0
 #Total number of fails = 0
-#Complete globalDetailRoute on Thu Jan 16 15:40:57 2025
+#Complete globalDetailRoute on Fri Jan 17 11:01:24 2025
 #
-% End globalDetailRoute (date=01/16 15:40:57, total cpu=0:00:07.5, real=0:00:08.0, peak res=904.5M, current mem=834.3M)
-#routeDesign: cpu time = 00:00:08, elapsed time = 00:00:08, memory = 833.00 (MB), peak = 904.52 (MB)
+% End globalDetailRoute (date=01/17 11:01:24, total cpu=0:00:08.6, real=0:00:09.0, peak res=974.6M, current mem=892.2M)
+#routeDesign: cpu time = 00:00:09, elapsed time = 00:00:09, memory = 889.48 (MB), peak = 974.57 (MB)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -1541,13 +1547,15 @@ WARNING   IMPEXT-3530          1  The process node is not set. Use the com...
 ERROR     IMPDC-634            1  Failed to build the timing graph since t...
 *** Message Summary: 42 warning(s), 1 error(s)
 
-#% End routeDesign (date=01/16 15:40:57, total cpu=0:00:07.7, real=0:00:08.0, peak res=904.5M, current mem=833.0M)
+#% End routeDesign (date=01/17 11:01:24, total cpu=0:00:08.9, real=0:00:09.0, peak res=974.6M, current mem=889.5M)
 <CMD> setDrawView place
 <CMD> deselectAll
 <CMD> write_lef_abstract -cutObsMinSpacing BATCHARGERcore.lef
 <CMD> fit
+<CMD> zoomBox -42.50100 24.02700 892.50000 477.27200
+<CMD> fit
 
-*** Memory Usage v#2 (Current mem = 1087.766M, initial mem = 272.281M) ***
-*** Message Summary: 174 warning(s), 3 error(s)
+*** Memory Usage v#2 (Current mem = 1114.531M, initial mem = 280.281M) ***
+*** Message Summary: 171 warning(s), 3 error(s)
 
---- Ending "Innovus" (totcpu=0:00:41.3, real=0:01:48, mem=1087.8M) ---
+--- Ending "Innovus" (totcpu=0:00:54.0, real=0:03:26, mem=1114.5M) ---
